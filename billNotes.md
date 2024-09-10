@@ -30,3 +30,7 @@ docker ps
 # Build image & pass in local env and adminpass files for secrets
 
 `docker buildx build --tag gened --secret id=env,src=./env --secret id=adminpass,src=./adminpass .`docker run -P gened_2`
+
+
+
+docker buildx build --tag gened_2 --secret id=env,src=./.env .                  
